@@ -12,6 +12,16 @@ document.getElementById('deposit-button').addEventListener('click', function () 
    const deposittextdElement = parseFloat(deposittextValueSting);
 
    const sum = depositfieldElement + deposittextdElement;
-
    deposittext.innerText = sum;
+
+
+   const balanceText = document.getElementById('balance-text')
+   const balanceTextValueString = balanceText.innerText
+   const balanceElement = parseFloat(balanceTextValueString);
+
+   const sumOfbalance = balanceElement + depositfieldElement;
+   balanceText.innerText = sumOfbalance;
+
+
+
 })
