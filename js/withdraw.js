@@ -12,4 +12,12 @@ document.getElementById('withdraw-button').addEventListener('click', function ()
 
    const sumTotal = withdrawTextElement + withdrawFieldElement;
     withdrawText.innerText = sumTotal;
+
+
+    const balanceText = document.getElementById('balance-text')
+    const balanceTextValueString = balanceText.innerText
+    const balanceElement = parseFloat(balanceTextValueString);
+
+    const sumTotalBalance = balanceElement - withdrawFieldElement
+    balanceText.innerText = sumTotalBalance;
 })
